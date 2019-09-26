@@ -2,11 +2,15 @@
 	margin: 65px;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
 	float: left;
 	width: 95px;
-   margin-left: 25px;
+   margin: auto;
    position: relative;
+   font-family: 'Poppins', sans-serif;
+   font-size: 35px;
+   font-weight: 600;
 }
 
 .navigation ul {
@@ -18,22 +22,24 @@
 
 .navigation li {
    display: inline-block;
-   font-family: 'Open Sans', san serif;
+   font-family: 'Poppins', sans-serif;
    padding: 0 15px;
    float: right;
-   font-weight: 300;
-   margin-top: 35px;
+   font-weight: 600;
+   margin-top: 15px;
    font-size: 16px;
-   letter-spacing: 2px;
 }
 
 .hero img {
-   width:100%;
    max-width: 275px;
-   display: block;
-   margin: 100px 0px 0px 500px;
-   float: left;
-   padding: 30px;
+   min-width: 5%;
+   display: inline-block;
+   margin: 100px 0px 0px 630px;
+  /* float: left;*/
+   padding-right: 5px;
+   position: relative;
+   /*overflow: auto;*/
+   right: 2%;
 }
 
 body {
@@ -41,14 +47,19 @@ body {
    padding: auto;
 }
 
+p {
+  font-size: 14px;
+}
+
 .hero-text {
    display: inline-block;
-   font-family: 'Open Sans', san serif;
-   padding-left: 20px;
-   margin-top: 220px;
+   font-family: 'Poppins', sans-serif;
+ /*  padding-left: 20px;*/
+   margin-top: 250px;
    position: fixed;
-   letter-spacing: 3px;
    float: right;
+   font-weight: 700;
+   font-size: 20px;
 }
 
 .hero-text h1, p {
@@ -56,40 +67,104 @@ body {
    line-height: 40px;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
 .hero-text p {
-     font-size: 14px;
+     font-size: 18px;
+     font-weight: 500;
 }
 
 .profile-image img {
-  display: block;
-  margin: 0 auto;
-  padding: 40px 0px 0px 90px;
-  width: 500px;
   float: left;
+}
+
+
+.bio {
+   font-family: 'Poppins', sans-serif;
+   position: relative;
+   float: right;
+   width: 600px;
+}
+
+.bio h1 {
+  color: #4FE9D2;
+}
+
+.diff-color {
+  color: #4FE9D2;
+}
+
+.project-description {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.work {
+  font-size: 14px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  line-height: 0px;
+  position: relative;
+  text-align: center;
+
+}
+
+.work img {
+  padding: 10px;
+}
+
+.gallery-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+.gallery {
+  margin: .5vw;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  }
+
+  .box {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 100px;
+    margin: .5vw;
+  }
+
+  .box a:hover {
+    opacity: 0.1;
+  }
+
+.box img {
+  width: 500px;
+  height: 300px;
+  padding: 5px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .contact-form {
   margin: auto;
   border-radius: 5px;
-  padding: 20px;
   width: 500px;
-  font-family: 'Open Sans', san serif;
-  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
-}
-
-.bio {
-   display: inline-block;
-   font-family: 'Open Sans', san serif;
-   margin-left: 80px;
-   margin-top: 50px;
-   position: absolute;
-   float: right;
-   max-width: 800px;
-}
-
-.bio h1 {
-  color: #75CDD8;
 }
 
 a:unvisited {
@@ -101,9 +176,13 @@ a:visited {
 }
 
 a:hover {
-   color: #75CDD8;
+   color: #4FE9D2;
 
 }
+
+a.selected {
+   color: #4FE9D2;
+ }
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -115,7 +194,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   font-size: 14px;
-  font-family: 'Open Sans', san serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 input[type=submit] {
@@ -125,21 +204,30 @@ input[type=submit] {
   border: none;
   border-radius: 0px;
   cursor: pointer;
-  font-family: 'Open Sans', san serif;
-  letter-spacing: 2px;
+ font-family: 'Poppins', sans-serif;
 }
 
 input[type=submit]:hover {
-  background-color: #75CDD8;
+  background-color: #4FE9D2;
 }
 
 footer {
    position: fixed;
-   left: 0;
    bottom: 0;
+   margin: auto;
    width: 100%;
    text-align: center;
-   font-family: 'Open Sans', san serif;
+   font-family: 'Poppins', sans-serif;
    font-size: 12px;
-   z-index: -1;
+   line-height: 10px;
+   background-color: #FFF;
+}
+
+footer img {
+  width: 40px;
+}
+
+footer a:hover {
+  opacity: 0.2;
+  color: #4FE9D2;
 }
