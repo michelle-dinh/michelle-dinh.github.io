@@ -79,15 +79,19 @@ h2 {
 }
 
 .profile-image img {
+  position: relative;
+  display: inline-block;
   float: left;
 }
 
 
 .bio {
+   margin-left: 80px;
    font-family: 'Poppins', sans-serif;
-   position: relative;
+   position: absolute;
    float: right;
-   width: 600px;
+   width: 40%;
+   display: inline-block;
 }
 
 .bio h1 {
@@ -155,8 +159,10 @@ h2 {
 }
 
 .container {
-  width: 60%;
-  margin: 0 auto;
+  width: 700px;
+  margin-left: 15%; 
+  margin-right: auto;
+  max-width: 100%;
 }
 
 .contact-form {
