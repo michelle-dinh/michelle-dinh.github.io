@@ -30,17 +30,6 @@
    font-size: 16px;
 }
 
-.hero img {
-   max-width: 275px;
-   min-width: 5%;
-   display: inline-block;
-   margin: 100px 0px 0px 630px;
-  /* float: left;*/
-   padding-right: 5px;
-   position: relative;
-   /*overflow: auto;*/
-   right: 2%;
-}
 
 body {
 	margin: auto;
@@ -50,14 +39,28 @@ body {
 p {
   font-size: 14px;
 }
+.hero {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.hero img {
+   left: 6%;
+   max-width: 275px;
+   min-width: 5%;
+   float: left;
+   position: relative;
+   margin-top: 150px;
+   /*overflow: auto;*/
+}
 
 .hero-text {
    display: inline-block;
    font-family: 'Poppins', sans-serif;
  /*  padding-left: 20px;*/
-   margin-top: 250px;
-   position: fixed;
-   float: right;
+   margin-top: 300px;
+   position: relative;
+   margin-left: 75px;
    font-weight: 700;
    font-size: 20px;
 }
@@ -127,7 +130,7 @@ h2 {
 .gallery-container {
   margin: 0 auto;
   padding: 0;
-  width: 90%;
+  width: 85%;
 }
 
 .gallery {
@@ -148,13 +151,13 @@ h2 {
     margin: .5vw;
   }
 
-  .box a:hover {
-    opacity: 0.1;
+.box a:hover {
+    opacity: 0.5;
   }
 
 .box img {
-  width: 500px;
-  height: 300px;
+  width: 650px;
+  height: 400px;
   padding: 5px;
 }
 
@@ -171,6 +174,10 @@ h2 {
   width: 500px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
+}
+
+a {
+  color: #000;
 }
 
 a:unvisited {
